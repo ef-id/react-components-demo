@@ -9,10 +9,10 @@ const MenuItem = ({
     let classes = ['menu-item'];
 
     if(isSelected){
-        classes.push('menu-item selected')
+        classes.push('menu-item-selected')
     }
     return (
-        <li className="menu-item">
+        <li className={classes.join(' ')}>
             <a href="#" onClick={() => onClick(id)}>{children}</a>
         </li>
     );

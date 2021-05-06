@@ -6,6 +6,7 @@ import style from './App.module.css';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Menu from './components/Menu/Menu';
+import Footer from './components/Footer/Footer';
 
 
 class App extends Component{
@@ -47,6 +48,8 @@ class App extends Component{
                     <Main 
                         posts={this.getPosts()} 
                     />
+
+                    <Footer />
                 </div>
             </div>
         );
